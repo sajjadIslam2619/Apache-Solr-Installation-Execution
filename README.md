@@ -3,9 +3,11 @@ Apache solr in windows and linux server
 
 # Solr Download and Installation :
 Step - 1: Collect the Solr TAR Archive file (https://lucene.apache.org/solr/downloads.html). Now you have to extract that archive file at target directory of server.
+
 Step – 2: To extract solr, execute the bellow command 
        tar zxf solr-5.3.1.tgz -C targetDirectory
 targetDirectory (Ex : /apps/solr)  is the directory where solr will be installed. Solr runs of Java 7 or          greater. Before we start the solr server, validate JAVA_HOME is set on machine.
+
 Step - 3: Go to the solr directory (Ex: /apps/solr/solr-5.3.1) and execute bellow command to start solr.
        bin/solr start
 solr will start at default port 8983. For different port, use the bellow command.
