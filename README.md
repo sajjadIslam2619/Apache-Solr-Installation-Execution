@@ -8,7 +8,7 @@ Step – 2: To extract solr, execute the bellow command
 
        tar zxf solr-5.3.1.tgz -C targetDirectory
        
-targetDirectory (Ex : /apps/solr)  is the directory where solr will be installed. Solr runs of Java 7 or          greater. Before we start the solr server, validate JAVA_HOME is set on machine.
+targetDirectory (Ex : /apps/solr)  is the directory where solr will be installed. Solr runs of Java 7 or greater. Before we start the solr server, validate JAVA_HOME is set on machine.
 
 Step - 3: Go to the solr directory (Ex: /apps/solr/solr-5.3.1) and execute bellow command to start solr.
 
@@ -35,6 +35,7 @@ bin/solr create -c CORE_NAME -p 8983 -d sample_techproducts_configs
  -p 8983 is not necessery if we start the server in default port.
  
 The output will be like this
+
 Setup new core instance directory:
 /apps/solr/solr-5.3.1/server/solr/core_test
 
@@ -65,7 +66,7 @@ Only file path indexing is needed, so unnecessary fileld could be avoided . Set 
 
 Set the value of indexed and stored as 'false' for rest of the field tags.
 
-# Solr (.cal) file indexing :
+# Solr (.cal/.txt) file indexing :
 Go to the Solr directory (Ex: /apps/solr/solr-5.3.1).
 Now for indexing all the .cal/.txt files of a directory, execute the bellow command.
 
