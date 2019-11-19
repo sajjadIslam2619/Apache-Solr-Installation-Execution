@@ -55,7 +55,6 @@ New core instance directory : solr-5.3.1/server/solr/CORE_NAME
 Directory of schema.xml is : /solr-5.3.1/server/solr/CORE_NAME/conf
 Only file path indexing is needed, so unnecessary fileld could be avoided . Set these fileld tags as shown bellow :
 ```xml
-<myxml>
  <field name="_version_" type="long" indexed="true" stored="true"/>
 <field name="_root_" type="string" indexed="true" stored="false"/>
 <field name="id" type="string" indexed="true" stored="true" required="true" multiValued="false" />
@@ -64,7 +63,7 @@ Only file path indexing is needed, so unnecessary fileld could be avoided . Set 
 <field name="links" type="string" indexed="true" stored="true" multiValued="true"/>
  <field name="_src_" type="string" indexed="false" stored="true"/>
 <field name="includes" type="text_general" indexed="true" stored="true" termVectors="true" termPositions="true" termOffsets="true" />
- </myxml>
+```
 
 Set the value of indexed and stored as 'false' for rest of the field tags.
 
