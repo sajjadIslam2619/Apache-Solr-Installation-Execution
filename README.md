@@ -76,9 +76,14 @@ Port is not necessary if default port is used.
 # Solr commands :
 To check if Solr is running or not, go to the following url : http://HOST:PORT/solr/
 To start or stop Solr, go to Solr directory (Ex: /apps/solr/solr-5.3.1).
+
 Redirect to bin : cd bin
+
 Start solr : ./solr start
+
 Stop solr : ./solr stop
+
 Restart solr : ./solr restart
+
 Delete core : ./solr delete -c $Core_Name [Ex: core_test]
 
